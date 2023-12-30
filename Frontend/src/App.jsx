@@ -1,7 +1,13 @@
-import React from "react";
+// App.jsx
+import "./App.css";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
-    <div className=" text-center text-2xl font-bold text-fuchsia-900">App</div>
+    <>
+      <Navbar />
+      <Home />
+    </>
   );
 }
