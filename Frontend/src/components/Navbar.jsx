@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="bg-black md:px-14 p-5 max-w-screen-3xl mx-auto shadow-xl fixed top-0 right-0 left-0">
+      <nav className="bg-black border-b border-gray-500 md:px-14 p-5 max-w-screen-3xl mx-auto shadow-xl fixed top-0 right-0 left-0">
         <div className="text-xl container mx-auto flex justify-between items-center font-medium">
           <div className="flex items-center lg:space-x-10 space-x-0 text-nowrap">
             <figure>
@@ -106,7 +106,7 @@ export default function Navbar() {
       </nav>
       {/* nav items for mobile devices */}
       <div
-        className={`space-y-4 px-4 pt-32 bg-gray-300 text-xl z-10 ${
+        className={`space-y-4 py-4 px-4 pt-32 bg-gray-300 text-xl z-10 ${
           isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
         }`}
       >

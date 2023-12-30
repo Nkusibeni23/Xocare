@@ -3,7 +3,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css";
 import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
-import cover1 from "../assets/images/ZZM_5988.jpg";
+import cover1 from "../assets/images/ZZM_6301.jpg";
 import cover2 from "../assets/images/ZZM_5981.jpg";
 import cover3 from "../assets/images/ZZM_6156.jpg";
 import cover4 from "../assets/images/ZZM_6002.jpg";
@@ -65,7 +65,7 @@ export default function Home() {
         </SwiperSlide>
         <SwiperSlide>
           {" "}
-          <div className="md:px-12 p-4 max-w-screen-3xl mx-auto mt-[90px] bg-black ">
+          <div className="md:px-12 p-4 max-w-screen-3xl mx-auto mt-[90px] bg-black">
             <div>
               <div className=" flex flex-col md:flex-row-reverse justify-between items-center gap-2">
                 {/* banner image */}
