@@ -6,6 +6,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
+    console.log("Toggle menu clicked");
     setIsMenuOpen(!isMenuOpen);
   };
 
@@ -105,7 +106,7 @@ export default function Navbar() {
       </nav>
       {/* nav items for mobile devices */}
       <div
-        className={`space-y-4 px-4 pt-32 bg-gray-300 text-xl ${
+        className={`space-y-4 px-4 pt-32 bg-gray-300 text-xl z-10 ${
           isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
         }`}
       >
