@@ -42,6 +42,11 @@ export default function Home() {
         className="relative group"
         spaceBetween={50}
         slidesPerView={1}
+        loop={true}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
         navigation={{
           nextEl: ".button-next-slide",
           prevEl: ".button-prev-slide",
