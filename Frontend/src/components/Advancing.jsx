@@ -23,7 +23,7 @@ export default function Advancing() {
                 Through our advocacy efforts, we work tirelessly to uphold the
                 rights and overall well-being of women on a global scale.
               </p>
-              <button className="p-3 bg-orange-500 w-full mt-4 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-500">
+              <button className="p-3 bg-orange-500 w-full mt-4 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-500 lg:w-[220px]">
                 Donate
               </button>
             </div>
@@ -45,7 +45,7 @@ export default function Advancing() {
                 Our mission encompasses raising awareness about pressing human
                 rights issues, shedding light on injustices.
               </p>
-              <button className="p-3 bg-orange-500 w-full mt-4 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-500">
+              <button className="p-3 bg-orange-500 w-full mt-4 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-500 lg:w-[220px]">
                 Donate
               </button>
             </div>
