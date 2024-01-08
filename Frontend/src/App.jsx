@@ -2,6 +2,7 @@
 import "./App.css";
 import About from "./components/About";
 import Advancing from "./components/Advancing";
+import Background from "./components/Background";
 import Feature from "./components/Feature";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
@@ -15,6 +16,7 @@ export default function App() {
       <About />
       <Feature />
       <Outreach />
+      <Background />
       <Advancing />
     </>
   );

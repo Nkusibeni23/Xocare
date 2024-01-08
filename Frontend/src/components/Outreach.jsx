@@ -1,6 +1,6 @@
 export default function Outreach() {
   return (
-    <div className="px-4 sm:px-8 md:px-16 max-w-screen-3xl mx-auto bg-gradient-to-b from-stone-300 via-gray-100 to-white">
+    <div className="px-4 sm:px-8 md:px-16 max-w-screen-3xl mx-auto bg-gradient-to-b from-stone-300 via-gray-100 to-white mt-6">
       <h2 className="text-2xl font-bold text-stone-900 text-center pt-8">
         Our Outreach
       </h2>

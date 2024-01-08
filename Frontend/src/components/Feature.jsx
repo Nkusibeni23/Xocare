@@ -2,7 +2,7 @@ import feature1 from "../assets/images/ZZM_6332.jpg";
 
 export default function Feature() {
   return (
-    <div className="my-16 md:px-14 px-4 max-w-screen-2xl mx-auto">
+    <div className="md:px-14 px-4 max-w-screen-2xl mx-auto">
       <div className="flex flex-col lg:flex-row justify-between items-start gap-10">
         <div className="lg:w-1/2 w-full">
           <h3 className="text-3xl font-bold mb-3">Get the help YOU need</h3>

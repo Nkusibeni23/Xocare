@@ -3,7 +3,7 @@ import hand1 from "../assets/images/handshake.jpg";
 
 export default function About() {
   return (
-    <div className="px-4 sm:px-8 md:px-16 max-w-screen-3xl mx-auto mt-8">
+    <div className="px-4 sm:px-8 md:px-16 max-w-screen-3xl mx-auto mt-8  lg:w-[1200px]">
       <div className="flex sm:flex-col flex-row items-center justify-center text-center">
         <h2 className="text-3xl font-bold">
           Our Mission Is Succinctly Captured in
