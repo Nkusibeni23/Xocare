@@ -3,7 +3,7 @@ import background7 from "../assets/images/background7.jpg";
 
 export default function Advancing() {
   return (
-    <div className="flex flex-col max-w-screen-3xl mx-auto bg-black mt-6">
+    <div className="flex flex-col max-w-screen-3xl mx-auto bg-black">
       <div className="flex flex-col sm:flex-row items-center justify-center">
         <div className="flex flex-wrap justify-center items-center py-8 text-center space-y-8 sm:space-y-0 sm:space-x-8">
           <div
@@ -23,7 +23,7 @@ export default function Advancing() {
                 Through our advocacy efforts, we work tirelessly to uphold the
                 rights and overall well-being of women on a global scale.
               </p>
-              <button className="p-3 bg-orange-500 w-full mt-4 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-500 lg:w-[220px]">
+              <button className="p-3 bg-orange-500 w-full mt-4 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-500 lg:w-[220px] text-white">
                 Donate
               </button>
             </div>
@@ -45,7 +45,7 @@ export default function Advancing() {
                 Our mission encompasses raising awareness about pressing human
                 rights issues, shedding light on injustices.
               </p>
-              <button className="p-3 bg-orange-500 w-full mt-4 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-500 lg:w-[220px]">
+              <button className="p-3 bg-orange-500 w-full mt-4 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-500 lg:w-[220px] text-white">
                 Donate
               </button>
             </div>

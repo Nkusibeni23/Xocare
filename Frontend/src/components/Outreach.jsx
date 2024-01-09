@@ -1,6 +1,6 @@
 export default function Outreach() {
   return (
-    <div className="px-4 sm:px-8 md:px-16 max-w-screen-3xl mx-auto bg-gradient-to-b from-stone-300 via-gray-100 to-white mt-6">
+    <div className="px-4 sm:px-8 md:px-16 max-w-screen-3xl mx-auto bg-gradient-to-b from-stone-300 via-gray-100 to-white">
       <h2 className="text-2xl font-bold text-stone-900 text-center pt-8">
         Our Outreach
       </h2>
@@ -12,7 +12,7 @@ export default function Outreach() {
               alt=""
               className="w-full rounded-lg object-cover mb-3"
             />
-            <h3 className="font-bold leading-6 mb-3">
+            <h3 className="font-bold leading-6 mb-3 text-black">
               Enhancing Health and Well-being
             </h3>
             <p className=" text-sm lg:text-lg text-gray-700 font-medium">
@@ -28,7 +28,7 @@ export default function Outreach() {
               alt=""
               className="w-full rounded-lg object-cover mb-3"
             />
-            <h3 className="font-bold leading-6 mb-3">
+            <h3 className="font-bold leading-6 mb-3 text-black">
               Empowerment Through Education
             </h3>
             <p className=" text-sm lg:text-lg text-gray-700 font-medium">
@@ -45,7 +45,7 @@ export default function Outreach() {
               alt=""
               className="w-full rounded-lg object-cover mb-3"
             />
-            <h3 className="font-bold leading-6 mb-3">
+            <h3 className="font-bold leading-6 mb-3 text-black">
               Alleviating Hunger and Food Insecurity
             </h3>
             <p className=" text-sm lg:text-lg text-gray-700 font-medium">

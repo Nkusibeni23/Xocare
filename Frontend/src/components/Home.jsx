@@ -56,7 +56,7 @@ export default function Home() {
         <SwiperSlide>
           <div
             style={containerStyle}
-            className=" px-16 max-w-screen-3xl mx-auto mt-[90px]"
+            className=" px-16 max-w-screen-3xl mx-auto mt-[90px] bg-white"
           >
             <div className="flex items-start justify-start py-32">
               <div className=" flx-cols w-[350px]">

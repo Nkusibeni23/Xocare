@@ -2,10 +2,12 @@ import feature1 from "../assets/images/ZZM_6332.jpg";
 
 export default function Feature() {
   return (
-    <div className="md:px-14 px-4 max-w-screen-2xl mx-auto">
+    <div className="md:px-14 px-4 max-w-screen-3xl mx-auto bg-white">
       <div className="flex flex-col lg:flex-row justify-between items-start gap-10">
         <div className="lg:w-1/2 w-full">
-          <h3 className="text-3xl font-bold mb-3">Get the help YOU need</h3>
+          <h3 className="text-3xl font-bold mb-3 text-black">
+            Get the help YOU need
+          </h3>
           <p className="text-base text-gray-500 font-normal leading-relaxed">
             The Single Parent Project specifically helps working single parents
             who make too much for government assistance, but not enough to
@@ -43,22 +45,8 @@ export default function Feature() {
             to help single parents better their financial, personal, and
             emotional well-being.
           </p>
-          <button className=" flex items-center gap-6 border-2 mt-6 p-3 rounded-lg border-black font-medium hover:bg-black hover:text-white transition-all duration-500">
-            Learn More About Us
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-              />
-            </svg>
+          <button className="border-2 mt-6 mb-6 p-3 rounded-lg border-black font-medium hover:bg-black hover:text-white transition-all duration-500 text-black">
+            Learn More &rarr;
           </button>
         </div>
       </div>

@@ -1,6 +1,6 @@
 export default function Background() {
   return (
-    <div className="px-4 sm:px-8 md:px-16 max-w-screen-2xl mx-auto">
+    <div className="px-4 sm:px-8 md:px-16 max-w-screen-3xl mx-auto bg-white">
       <h2 className="font-medium text-black text-center py-6">
         HOW WE SUPPORT SINGLE PARENT FAMILIES
       </h2>
@@ -11,12 +11,12 @@ export default function Background() {
             alt=""
             className="w-full rounded-lg object-cover mb-3"
           />
-          <h3 className="font-medium mb-3 uppercase">Assist</h3>
+          <h3 className="font-medium mb-3 uppercase text-black">Assist</h3>
           <p className=" text-sm lg:text-lg text-gray-700 font-medium">
             Xocare provides emergency stabilization for families who are in
             danger of losing everything by connecting them to vital resources.
           </p>
-          <button className=" p-4 border-2 border-black rounded-lg mt-6 hover:bg-black hover:text-white transition-all duration-500 uppercase text-sm">
+          <button className=" p-4 border-2 border-black rounded-lg mt-6 hover:bg-black hover:text-white transition-all duration-500 uppercase text-sm text-black">
             Learn More &rarr;
           </button>
         </div>
@@ -26,12 +26,12 @@ export default function Background() {
             alt=""
             className="w-full rounded-lg object-cover mb-3"
           />
-          <h3 className="font-medium mb-3 uppercase">Connect</h3>
+          <h3 className="font-medium mb-3 uppercase text-black">Connect</h3>
           <p className=" text-sm lg:text-lg text-gray-700 font-medium">
             Xocare provides single parents with meaningful donations on a weekly
             basis that will assist them in supporting their families
           </p>
-          <button className=" p-4 border-2 border-black rounded-lg mt-6 hover:bg-black hover:text-white transition-all duration-500 uppercase text-sm">
+          <button className=" p-4 border-2 border-black rounded-lg mt-6 hover:bg-black hover:text-white transition-all duration-500 uppercase text-sm text-black">
             Learn More &rarr;
           </button>
         </div>
@@ -41,13 +41,13 @@ export default function Background() {
             alt=""
             className="w-full rounded-lg object-cover mb-3"
           />
-          <h3 className="font-medium mb-3 uppercase">Grow</h3>
+          <h3 className="font-medium mb-3 uppercase text-black">Grow</h3>
           <p className=" text-sm lg:text-lg text-gray-700 font-medium">
             Xocare provides training programs for parents to stop financial
             free-fall and learn life skills to successfully raise their
             families.
           </p>
-          <button className=" p-4 border-2 border-black rounded-lg mt-6 hover:bg-black hover:text-white transition-all duration-500 uppercase text-sm">
+          <button className=" p-4 border-2 border-black rounded-lg mt-6 hover:bg-black hover:text-white transition-all duration-500 uppercase text-sm text-black">
             Learn More &rarr;
           </button>
         </div>
@@ -57,12 +57,12 @@ export default function Background() {
             alt=""
             className="w-full rounded-lg object-cover mb-3"
           />
-          <h3 className="font-medium mb-3 uppercase">Inspire</h3>
+          <h3 className="font-medium mb-3 uppercase text-black">Inspire</h3>
           <p className=" text-sm lg:text-lg text-gray-700 font-medium">
-            SMO rewards families who are on a path to independence through
+            Xocare rewards families who are on a path to independence through
             several celebratory special events through the year.
           </p>
-          <button className=" p-4 border-2 border-black rounded-lg mt-6 hover:bg-black hover:text-white transition-all duration-500 uppercase text-sm">
+          <button className=" p-4 border-2 border-black rounded-lg mt-6 hover:bg-black hover:text-white transition-all duration-500 uppercase text-sm text-black mb-6">
             Learn More &rarr;
           </button>
         </div>

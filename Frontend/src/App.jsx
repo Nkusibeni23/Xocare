@@ -4,6 +4,7 @@ import About from "./components/About";
 import Advancing from "./components/Advancing";
 import Background from "./components/Background";
 import Feature from "./components/Feature";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import OurFamily from "./components/Our-Family";
@@ -20,6 +21,7 @@ export default function App() {
       <Background />
       <Advancing />
       <OurFamily />
+      <Footer />
     </>
   );
 }
