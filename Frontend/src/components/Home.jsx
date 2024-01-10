@@ -118,7 +118,7 @@ export default function Home() {
           >
             <div className="flex items-start justify-start py-32">
               <div className=" flx-cols w-[250px]">
-                <h3 className="text-3xl font-bold  mb-6 border-b">
+                <h3 className="text-3xl font-bold  mb-6 border-b text-black">
                   Get Involved with Our Cause
                 </h3>
                 <p className="font-medium text-base lg:text-lg text-white">
