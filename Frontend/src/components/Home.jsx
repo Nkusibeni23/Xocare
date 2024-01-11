@@ -18,6 +18,7 @@ export default function Home() {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     height: "550px",
+    loading: "lazy",
   };
 
   const containerStyle1 = {
@@ -26,6 +27,7 @@ export default function Home() {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     height: "550px",
+    loading: "lazy",
   };
 
   const containerStyle2 = {
@@ -34,6 +36,7 @@ export default function Home() {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     height: "550px",
+    loading: "lazy",
   };
 
   return (

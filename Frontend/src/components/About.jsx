@@ -36,6 +36,7 @@ export default function About() {
                 src={image1}
                 alt="We fund"
                 className="w-10 h-10 sm:w-14 sm:h-14"
+                loading="lazy"
               />
             </div>
             <div className="mt-4 text-center">
@@ -51,7 +52,12 @@ export default function About() {
 
           <div className="w-full sm:w-auto">
             <div className="rounded-full border-2 w-20 h-20 sm:w-28 sm:h-28 flex items-center justify-center border-black mx-auto">
-              <img src={hand1} alt="" className="w-10 h-10 sm:w-14 sm:h-14" />
+              <img
+                src={hand1}
+                alt=""
+                className="w-10 h-10 sm:w-14 sm:h-14"
+                loading="lazy"
+              />
             </div>
             <div className="mt-4 text-center">
               <h2 className="text-lg font-bold uppercase mb-2 text-black">

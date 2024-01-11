@@ -20,21 +20,25 @@ export default function Footer() {
       <div className="flex-cols max-w-screen-3xl mx-auto">
         <footer className="footer p-10 lg:px-40 text-base-content bg-black">
           <nav>
-            <header className="footer-title">Non Profit</header>
+            <header className=" uppercase font-bold text-gray-200">
+              Non Profit
+            </header>
             <a className="link link-hover">Donate For Single Parent</a>
             <a className="link link-hover">Help Single Parent</a>
             <a className="link link-hover">Educate a Child</a>
             <a className="link link-hover">Feed Child</a>
           </nav>
           <nav>
-            <header className="footer-title">Links</header>
+            <header className="uppercase font-bold text-gray-200">Links</header>
             <a className="link link-hover">About us</a>
             <a className="link link-hover">Contact</a>
             <a className="link link-hover">Donate</a>
             <a className="link link-hover">Our Community</a>
           </nav>
           <nav>
-            <header className="footer-title">Address</header>
+            <header className="uppercase font-bold text-gray-200">
+              Address
+            </header>
             <a className="link link-hover flex gap-2">
               <FaLocationDot />
               Kicukiro-Kigali
@@ -49,7 +53,7 @@ export default function Footer() {
             </a>
           </nav>
           <nav>
-            <header className="footer-title">
+            <header className="uppercase font-bold text-gray-200">
               Join Us in Making a <br />
               Difference . Sign Up <br />
               For Newsletter

@@ -27,6 +27,7 @@ export default function Outreach() {
               src="https://lh3.googleusercontent.com/pw/ABLVV84TiUb7HwK8TeodEd2z2Bk5jxNaFyclIawI8gu8PFNOQdDg18hM5yS1wAUEO9SBSDiRHeID81ALzwaDCyC9CJKFRfwxaqia9fMAHeb33qbl3rW5CKqM4SBxUmQvuNUJUj5kiNgLoFPOE2dCa-1-JRQ=w1514-h1010-s-no-gm?authuser=0"
               alt=""
               className="w-full rounded-lg object-cover mb-3"
+              loading="lazy"
             />
             <h3 className="font-bold leading-6 mb-3 text-black">
               Empowerment Through Education
@@ -41,9 +42,10 @@ export default function Outreach() {
           </div>
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 p-4">
             <img
-              src="https://lh3.googleusercontent.com/pw/ABLVV84PgTXkFfWZ0xz8JsoeL451pyGeUIz2__mVeHffqJQtOiVrM5OXwKQw29FiiZmHFM830iQUPhHdLyPBzjEExw2vyLEeROQmwomSFXMMEY8pI8Fix9b4OJNvAxbmksyxaL8JHGTQ3_ds7gu1eXVX3eU=w1514-h1010-s-no-gm?authuser=0"
+              src="https://lh3.googleusercontent.com/pw/ABLVV84TiUb7HwK8TeodEd2z2Bk5jxNaFyclIawI8gu8PFNOQdDg18hM5yS1wAUEO9SBSDiRHeID81ALzwaDCyC9CJKFRfwxaqia9fMAHeb33qbl3rW5CKqM4SBxUmQvuNUJUj5kiNgLoFPOE2dCa-1-JRQ=w1514-h1010-s-no-gm?authuser=0"
               alt=""
               className="w-full rounded-lg object-cover mb-3"
+              loading="lazy"
             />
             <h3 className="font-bold leading-6 mb-3 text-black">
               Alleviating Hunger and Food Insecurity

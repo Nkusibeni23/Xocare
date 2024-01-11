@@ -22,16 +22,22 @@ export default function Feature() {
           </p>
           <div className="flex justify-center items-center mt-7">
             <img
-              src="https://lh3.googleusercontent.com/pw/ABLVV84nJ6fn7uu2pxMuLST543ZKExOA-XIcLOHhtusFSltuW_tCy_ZuL2QplrqCJmO4oWAo1NKsOdyzdbLrXFOI1wwZ5gyRXf3L4XJgPCgSwrK-APOTQ9Mte7tRCFRGB6B9Su1dBPDbLV9FjuPmuKNCxzw=w2334-h1558-s-no-gm?authuser=0"
+              src={feature1}
               alt="features1"
               className="w-full rounded-lg"
+              loading="lazy"
             />
           </div>
         </div>
         {/* image for about */}
         <div className="lg:w-1/2 w-full">
           <div className="flex justify-center items-center mt-7">
-            <img src={feature1} alt="features1" className="w-full rounded-lg" />
+            <img
+              src={feature1}
+              alt="features1"
+              className="w-full rounded-lg"
+              loading="lazy"
+            />
           </div>
           <p className="text-base text-gray-500 font-normal leading-relaxed mt-4">
             The Single Parent Project specifically helps working single parents

@@ -13,6 +13,7 @@ export default function Advancing() {
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
+              loading: "lazy",
             }}
           >
             <div className="bg-black bg-opacity-20 p-6 rounded-lg">
@@ -35,6 +36,7 @@ export default function Advancing() {
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
+              loading: "lazy",
             }}
           >
             <div className="bg-black bg-opacity-20 p-6 rounded-lg">
