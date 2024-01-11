@@ -1,18 +1,20 @@
 // App.jsx
 import "./App.css";
+// import LandingPage from "./components/LandingPage";
 import { BrowserRouter as Router } from "react-router-dom"; // Import BrowserRouter
 import Routers from "./Routers/Routers";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import LandingPage from "./components/LandingPage";
 
 export default function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routers />
-      <LandingPage />
-      <Footer />
-    </Router>
+    <>
+      <Router>
+        {/* <LandingPage /> */}
+        <Navbar />
+        <Routers />
+        <Footer />
+      </Router>
+    </>
   );
 }

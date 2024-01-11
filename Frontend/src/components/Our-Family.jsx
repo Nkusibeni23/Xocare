@@ -2,7 +2,7 @@ export default function OurFamily() {
   return (
     <div className="flex flex-col max-w-screen-3xl mx-auto items-center justify-center text-center bg-white">
       <div className="py-6">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-black">
+        <h1 className="text-xl lg:text-3xl font-semibold text-black">
           Your Donation Empowers Our Families
         </h1>
         <p className="text-gray-500 py-3 w-full md:w-[450px] lg:w-[550px] text-center mx-auto px-3">
