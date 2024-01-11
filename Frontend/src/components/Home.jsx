@@ -12,6 +12,8 @@ import Outreach from "./Outreach";
 import Advancing from "./Advancing";
 import Background from "./Background";
 import Our_Family from "./Our-Family";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function Home() {
   const backgroundImageUrl = `url(https://lh3.googleusercontent.com/pw/ABLVV84E_itgbVaqBfzJDhnT3EOUhBExokL-_IMytu-QazaLQ0QcJ1Ci_qXDFYZiq9-85sh6iM865r4YRx54_Ovgln4iCfRSrT4LbBZkt8F6d6cQUV7TIocSUormxhRZur2NYKjmEny0DqORWBdDsCsVgKs=w2334-h1558-s-no-gm?authuser=0)`;
@@ -47,6 +49,7 @@ export default function Home() {
 
   return (
     <>
+      <Navbar />
       <Swiper
         className="relative group"
         spaceBetween={50}
@@ -167,6 +170,7 @@ export default function Home() {
       <Background />
       <Advancing />
       <Our_Family />
+      <Footer />
     </>
   );
 }

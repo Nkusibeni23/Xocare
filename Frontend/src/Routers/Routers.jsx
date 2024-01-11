@@ -6,8 +6,8 @@ import Error from "../components/Error";
 export default function Routers() {
   return (
     <Routes>
-      <Route path="/Home" element={<Home />} />
       <Route path="/" element={<LandingPage />} />
+      <Route path="/Home" element={<Home />} />
       <Route path="/*" element={<Error />} />
     </Routes>
   );
