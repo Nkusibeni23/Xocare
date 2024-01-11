@@ -38,10 +38,10 @@ export default function LandingPage() {
                 <img src={Logo} alt="Logo" className="w-[400px] mx-auto" />
               </figure>
               <div className="w-[450px] mx-auto">
-                <p className="py-6 text-left text-3xl text-gray-500 font-light">
+                <p className="py-6 text-left text-3xl text-gray-600 font-light">
                   Empowering Single Mothers to cope with the impacts of divorce;
                   <br />
-                  through Psychological Counseling and Financial Couching
+                  through Psychological Counseling and Financial Couching.
                 </p>
                 <div className="flex justify-center gap-x-28 py-8">
                   <button className="p-2 bg-black text-white rounded-lg cursor-pointer w-[180px]">
@@ -103,13 +103,13 @@ export default function LandingPage() {
                   <img src={Background1} alt="Logo" className="w-[300px]" />
                 </figure>
                 <div className="w-[300px]">
-                  <p className="text-left text-3xl text-gray-200 font-light">
+                  <p className="text-left text-3xl text-gray-100 font-light">
                     Empowering Single Mothers to cope with the impacts of
                     divorce;
                     <br />
                     through Psychological Counseling and Financial Couching
                   </p>
-                  <div className="flex justify-center gap-10 py-14">
+                  <div className="flex justify-center gap-10 py-14 px-4">
                     <button className="p-2 bg-black text-white rounded-lg cursor-pointer w-full">
                       Full site
                     </button>
