@@ -3,7 +3,7 @@ import background7 from "../assets/images/background7.jpg";
 
 export default function Advancing() {
   return (
-    <div className="flex flex-col max-w-screen-3xl mx-auto bg-black">
+    <div className="flex flex-col max-w-screen-3xl mx-auto bg-black px-6">
       <div className="flex flex-col sm:flex-row items-center justify-center">
         <div className="flex flex-wrap justify-center items-center py-8 text-center space-y-8 sm:space-y-0 sm:space-x-8">
           <div

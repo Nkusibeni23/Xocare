@@ -9,12 +9,10 @@ import LandingPage from "./components/LandingPage";
 export default function App() {
   return (
     <Router>
-      <>
-        <LandingPage />
-        <Navbar />
-        <Routers />
-        <Footer />
-      </>
+      <Navbar />
+      <Routers />
+      <LandingPage />
+      <Footer />
     </Router>
   );
 }
