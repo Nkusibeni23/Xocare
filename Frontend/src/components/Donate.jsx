@@ -38,7 +38,7 @@ const Stepper = () => {
             </div>
             <div className="rounded-xl bg-white shadow-lg border border-gray-500 w-[730px] h-auto py-10">
               <div className="flex flex-col items-center justify-center">
-                <div className="flex w-[485px] justify-center items-start mb-10">
+                <div className="flex w-[500px] justify-center items-start mb-10">
                   {steps.map((step, index) => (
                     <div
                       key={index}
