@@ -1,3 +1,3 @@
 export default function DonateOnGoing() {
-  return <div>DonateOnGoing</div>;
+  return <div className=" text-black">DonateOnGoing</div>;
 }
