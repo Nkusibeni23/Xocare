@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { LiaHandHoldingHeartSolid } from "react-icons/lia";
+import "./onTime.css";
 
 export default function DonateOnTime() {
   const [customAmount, setCustomAmount] = useState(false);
@@ -54,6 +55,28 @@ export default function DonateOnTime() {
       <button className=" mt-6 w-full h-[60px] rounded-md bg-gray-300 text-black font-medium flex items-center justify-center gap-2 hover:bg-gray-400 transition-all duration-500">
         <LiaHandHoldingHeartSolid /> Multiply your impact. Make it Monthly!
       </button>
+      <div className="mt-8">
+        <label className=" text-gray-600">Please direct my support:</label>
+        <select className="select select-bordered border border-gray-400 rounded-md h-[60px] bg-transparent text-gray-600 w-full hover:border-4 hover:border-gray-950 transition-all duration-500 hover:outline-none">
+          <option disabled selected>
+            Education
+          </option>
+          <option>Extra Curricular Activates</option>
+          <option>Community Space Build</option>
+          <option>
+            Single Parent Assistance(Rent, Utilities, Bills, Groceries)
+          </option>
+          <option>Therapy or Additional Support Resources</option>
+        </select>
+      </div>
+      <div className="mt-6">
+        <div className="flex gap-3 items-center cursor-pointer">
+          <input type="checkbox" className="custom" />
+
+          <span className="text-gray-500">Dedicate this gift</span>
+        </div>
+        <div className="mt-2"></div>
+      </div>
     </>
   );
 }
