@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 import { TiTick } from "react-icons/ti";
-import { TbCalendarHeart } from "react-icons/tb";
 import "./donate.css";
 import DonateOnTime from "./pages/DonateOnTime";
 import DonateOnGoing from "./pages/DonateOnGoing";
+import { BsCalendarHeartFill } from "react-icons/bs";
 
 const Stepper = () => {
   const steps = [
@@ -30,16 +30,16 @@ const Stepper = () => {
     <>
       <div className="max-w-screen-3xl mx-auto bg-white min-h-screen">
         <div className="min-h-[430px] bg-black">
-          <div className="flex flex-col items-center justify-center text-white py-10 gap-10">
-            <div className="text-center">
-              <h2 className="font-semibold mb-3 text-3xl">Xocare</h2>
-              <p className="font-normal text-lg text-gray-200">
+          <div className=" absolute flex flex-col items-center justify-center text-white my-14 gap-6  w-full h-full">
+            <div className=" text-center">
+              <h2 className="font-semibold text-3xl">Xocare</h2>
+              <p className=" font-normal text-lg text-gray-200">
                 Your gift supports our mission. Make a donation today.
               </p>
             </div>
-            <div className="rounded-xl bg-white shadow-lg border border-gray-500 w-full md:w-[730px] h-auto py-10">
+            <div className="rounded-xl bg-white shadow-lg border border-gray-500 w-[730px] h-auto py-10">
               <div className="flex flex-col items-center justify-center">
-                <div className="flex w-full md:w-[500px] justify-center items-start mb-10">
+                <div className="flex w-[500px] justify-center items-start mb-10">
                   {steps.map((step, index) => (
                     <div
                       key={index}
@@ -59,7 +59,7 @@ const Stepper = () => {
                   ))}
                 </div>
 
-                <div className="grid grid-cols-2 w-full items-center text-black border-b-2 text-xl font-light">
+                <div className=" grid grid-cols-2 w-[600px]  items-center text-black border-b-2 text-xl font-light">
                   <button
                     onClick={() => setTab("onTime")}
                     className={`${
@@ -78,11 +78,11 @@ const Stepper = () => {
                         : "flex items-center justify-center gap-2"
                     }`}
                   >
-                    <TbCalendarHeart />
+                    <BsCalendarHeartFill />
                     Ongoing
                   </button>
                 </div>
-                <div className="mt-4 md:mt-[40px]">
+                <div className=" mt-[60px] text-black">
                   {tab === "onTime" && <DonateOnTime />}
                   {tab === "OnGoing" && <DonateOnGoing />}
                 </div>
@@ -92,9 +92,9 @@ const Stepper = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between md:items-center">
+      <div className="flex justify-between">
         <button
-          className="btn mb-4 md:mb-0"
+          className="btn"
           onClick={handleBack}
           disabled={currentStep === 1}
         >

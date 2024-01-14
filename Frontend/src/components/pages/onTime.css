@@ -29,3 +29,12 @@
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 }
+
+.bg-black {
+  background-color: black;
+}
+
+.half-white {
+  height: 50%;
+  background-color: white;
+}
