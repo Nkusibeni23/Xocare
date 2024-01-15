@@ -14,7 +14,7 @@ const Stepper = () => {
     "Payment Details",
   ];
 
-  const [currentStep, setCurrentStep] = useState(1);
+  const [currentStep, setCurrentStep] = useState(2);
   const [complete, setComplete] = useState(false);
   const [tab, setTab] = useState("onTime");
 
@@ -83,7 +83,7 @@ const Stepper = () => {
                   </button>
                 </div>
                 <div className=" mt-[60px] text-black">
-                  {tab === "onTime" && <DonateOnTime />}
+                  {tab === "onTime" && <DonateOnTime handleNext={handleNext} />}
                   {tab === "OnGoing" && <DonateOnGoing />}
                 </div>
               </div>
@@ -92,7 +92,7 @@ const Stepper = () => {
         </div>
       </div>
 
-      <div className="flex justify-between">
+      {/* <div className="flex justify-between">
         <button
           className="btn"
           onClick={handleBack}
@@ -105,7 +105,7 @@ const Stepper = () => {
             {currentStep === steps.length ? "Finish" : "Next"}
           </button>
         )}
-      </div>
+      </div> */}
     </>
   );
 };
