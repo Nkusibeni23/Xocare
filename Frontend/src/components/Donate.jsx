@@ -8,8 +8,8 @@ import { BsCalendarHeartFill } from "react-icons/bs";
 
 const Stepper = () => {
   const steps = [
-    "Choose Your Gift",
-    "Your Details",
+    "Choose Gift",
+    "Details",
     "Additional Details",
     "Payment Details",
   ];

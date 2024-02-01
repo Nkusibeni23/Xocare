@@ -1,9 +1,12 @@
 /* eslint-disable react/prop-types */
 import { useState, useRef, useEffect } from "react";
 import { LiaHandHoldingHeartSolid } from "react-icons/lia";
+import Details from "../steps/Details";
+import Additional from "../steps/Additional";
+import PaymentDetail from "../steps/PaymentDetail";
 import "./onTime.css";
 
-export default function DonateOnTime({ handleNext }) {
+export default function DonateOnTime() {
   const [customAmount, setCustomAmount] = useState(false);
   const [checked, setChecked] = useState(false);
   const inputRef = useRef(null);
@@ -97,10 +100,7 @@ export default function DonateOnTime({ handleNext }) {
           </div>
         )}
       </div>
-      <button
-        className="mt-8 w-full p-4 text-center bg-gray-700 hover:bg-gray-950 transition-all duration-500 rounded-lg text-white font-medium"
-        onClick={handleNext}
-      >
+      <button className="mt-8 w-full p-4 text-center bg-gray-700 hover:bg-gray-950 transition-all duration-500 rounded-lg text-white font-medium">
         Give
       </button>
     </>
