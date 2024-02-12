@@ -1,8 +1,11 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 import { TiTick } from "react-icons/ti";
-import "./donate.css";
-import DonateOnTime from "./pages/DonateOnTime";
+import "../components/donate.css";
+import ChooseGift from "../Donationpage/ChooseGift";
+import Details from "../Donationpage/Details";
+import AdditionalDetails from "../Donationpage/AdditionalDetails";
+import Payment from "../Donationpage/Payment";
 import DonateOnGoing from "./pages/DonateOnGoing";
 import { BsCalendarHeartFill } from "react-icons/bs";
 
@@ -14,7 +17,7 @@ const Stepper = () => {
     "Payment Details",
   ];
 
-  const [currentStep, setCurrentStep] = useState(2);
+  const [currentStep, setCurrentStep] = useState(1);
   const [complete, setComplete] = useState(false);
   const [tab, setTab] = useState("onTime");
 
@@ -24,6 +27,24 @@ const Stepper = () => {
 
   const handleBack = () => {
     setCurrentStep((prev) => (prev === 1 ? prev : prev - 1));
+  };
+
+  const renderCurrentStepPage = () => {
+    if (tab === "OnGoing") {
+      return <DonateOnGoing />;
+    }
+    switch (currentStep) {
+      case 1:
+        return <ChooseGift handleNext={handleNext} />;
+      case 2:
+        return <Details handleNext={handleNext} />;
+      case 3:
+        return <AdditionalDetails handleNext={handleNext} />;
+      case 4:
+        return <Payment handleNext={handleNext} />;
+      default:
+        return null;
+    }
   };
 
   return (
@@ -83,10 +104,15 @@ const Stepper = () => {
                   </button>
                 </div>
                 <div className=" mt-[60px] text-black">
-                  {tab === "onTime" && <DonateOnTime handleNext={handleNext} />}
-                  {tab === "OnGoing" && <DonateOnGoing />}
+                  {renderCurrentStepPage()}
                 </div>
               </div>
+              <button
+                onClick={handleNext}
+                className="mt-8 md:w-[650px] w-[550px] flex items-center justify-center text-center ml-10 p-4 bg-gray-700 hover:bg-gray-950 transition-all duration-500 rounded-lg text-white font-medium"
+              >
+                {currentStep === steps.length ? "Finish" : "Give"}
+              </button>
             </div>
           </div>
         </div>
