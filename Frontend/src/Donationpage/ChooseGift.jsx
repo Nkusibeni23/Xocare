@@ -5,7 +5,7 @@ import "../components/pages/onTime.css";
 
 export default function DonateOnTime() {
   const [customAmount, setCustomAmount] = useState(false);
-  const [checked, setChecked] = useState(false);
+  // const [checked, setChecked] = useState(false);
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -16,10 +16,6 @@ export default function DonateOnTime() {
 
   function handleAmount() {
     setCustomAmount(!customAmount);
-  }
-
-  function handleCheck() {
-    setChecked(!checked);
   }
 
   return (
@@ -63,7 +59,10 @@ export default function DonateOnTime() {
       </button>
       <div className="mt-8">
         <label className=" text-gray-600">Please direct my support:</label>
-        <select className="select select-bordered border border-gray-400 rounded-md h-[60px] bg-transparent text-gray-600 w-full hover:border-4 hover:border-gray-950 transition-all duration-500 hover:outline-none">
+        <select
+          className="select select-bordered border border-gray-400 rounded-md h-[60px] bg-transparent text-gray-600 w-full hover:border-4 hover:border-gray-950 transition-all duration-500 hover:outline-none mt-2"
+          required
+        >
           <option>Education</option>
           <option>Extra Curricular Activates</option>
           <option>Community Space Build</option>
@@ -72,30 +71,6 @@ export default function DonateOnTime() {
           </option>
           <option>Therapy or Additional Support Resources</option>
         </select>
-      </div>
-      <div className="mt-6">
-        <div className="flex gap-3 items-center cursor-pointer">
-          <input type="checkbox" className="custom" onClick={handleCheck} />
-
-          <span className="text-gray-500">Dedicate this gift</span>
-        </div>
-        {checked && (
-          <div className="mt-6">
-            <label className=" text-gray-600">What type of dedication?</label>
-            <select className=" mt-2 select select-bordered border border-gray-400 rounded-md h-[60px] bg-transparent text-gray-600 w-full hover:border-4 hover:border-gray-950 transition-all duration-500 hover:outline-none">
-              <option>In Honor Of</option>
-              <option>In Memory Of</option>
-            </select>
-            <div className="mt-2">
-              <label className=" text-gray-600">What type of dedication?</label>
-              <input
-                className="w-full px-3 p-4 mt-2 bg-transparent rounded-md border border-gray-400 hover:border-4 hover:border-gray-950 hover:outline-none"
-                placeholder="Dedication name"
-                type="text"
-              />
-            </div>
-          </div>
-        )}
       </div>
     </>
   );

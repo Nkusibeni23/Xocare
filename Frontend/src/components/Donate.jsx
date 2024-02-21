@@ -8,6 +8,7 @@ import AdditionalDetails from "../Donationpage/AdditionalDetails";
 import Payment from "../Donationpage/Payment";
 import DonateOnGoing from "./pages/DonateOnGoing";
 import { BsCalendarHeartFill } from "react-icons/bs";
+import { FaArrowCircleLeft } from "react-icons/fa";
 
 const Stepper = () => {
   const steps = [
@@ -51,16 +52,16 @@ const Stepper = () => {
     <>
       <div className="max-w-screen-3xl mx-auto bg-white min-h-screen">
         <div className="min-h-[430px] bg-black">
-          <div className=" absolute flex flex-col items-center justify-center text-white my-14 gap-6  w-full h-full">
+          <div className=" absolute flex flex-col items-center justify-center text-white my-14 gap-6 w-full h-full">
             <div className=" text-center">
               <h2 className="font-semibold text-3xl">Xocare</h2>
               <p className=" font-normal text-lg text-gray-200">
                 Your gift supports our mission. Make a donation today.
               </p>
             </div>
-            <div className="rounded-xl bg-white shadow-lg border border-gray-500 w-[730px] h-auto py-10">
+            <div className="rounded-xl bg-white shadow-lg border border-gray-500 w-[800px] h-auto py-10">
               <div className="flex flex-col items-center justify-center">
-                <div className="flex w-[500px] justify-center items-start mb-10">
+                <div className="flex w-[700px] justify-center items-start mb-10">
                   {steps.map((step, index) => (
                     <div
                       key={index}
@@ -80,58 +81,63 @@ const Stepper = () => {
                   ))}
                 </div>
 
-                <div className=" grid grid-cols-2 w-[600px]  items-center text-black border-b-2 text-xl font-light">
-                  <button
-                    onClick={() => setTab("onTime")}
-                    className={`${
-                      tab === "onTime"
-                        ? "text-black border-b-4 border-black font-medium"
-                        : null
-                    }`}
-                  >
-                    One Time
-                  </button>
-                  <button
-                    onClick={() => setTab("OnGoing")}
-                    className={`${
-                      tab === "OnGoing"
-                        ? "text-black border-b-4 border-black font-medium flex items-center justify-center gap-2"
-                        : "flex items-center justify-center gap-2"
-                    }`}
-                  >
-                    <BsCalendarHeartFill />
-                    Ongoing
-                  </button>
-                </div>
+                {currentStep === 1 ? (
+                  <div className="grid grid-cols-2 w-[650px] items-center text-black border-b-2 text-xl font-light">
+                    <button
+                      onClick={() => setTab("onTime")}
+                      className={`${
+                        tab === "onTime"
+                          ? "text-black border-b-4 border-black font-medium"
+                          : null
+                      }`}
+                    >
+                      One Time
+                    </button>
+                    <button
+                      onClick={() => setTab("OnGoing")}
+                      className={`${
+                        tab === "OnGoing"
+                          ? "text-black border-b-4 border-black font-medium flex items-center justify-center gap-2"
+                          : "flex items-center justify-center gap-2"
+                      }`}
+                    >
+                      <BsCalendarHeartFill />
+                      Ongoing
+                    </button>
+                  </div>
+                ) : null}
+
                 <div className=" mt-[60px] text-black">
                   {renderCurrentStepPage()}
                 </div>
               </div>
-              <button
-                onClick={handleNext}
-                className="mt-8 md:w-[650px] w-[550px] flex items-center justify-center text-center ml-10 p-4 bg-gray-700 hover:bg-gray-950 transition-all duration-500 rounded-lg text-white font-medium"
-              >
-                {currentStep === steps.length ? "Finish" : "Give"}
-              </button>
+              <div className="w-full flex justify-around items-center">
+                {currentStep !== 1 && (
+                  <button
+                    className="flex items-center gap-3 bg-gray-800 px-5 p-4 mt-8 rounded-lg"
+                    onClick={handleBack}
+                  >
+                    <FaArrowCircleLeft />
+                    Back
+                  </button>
+                )}
+                {!complete && (
+                  <button
+                    className={
+                      currentStep !== 1
+                        ? ` w-[270px] p-4 bg-gray-800 px-4 mt-8 rounded-lg hover:bg-gray-950 transition-all duration-300 font-medium`
+                        : `w-[620px] p-4 bg-gray-800 px-4 mt-8 rounded-lg hover:bg-gray-950 transition-all duration-300 font-medium`
+                    }
+                    onClick={handleNext}
+                  >
+                    {currentStep === steps.length ? "Finish" : "Give"}
+                  </button>
+                )}
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      {/* <div className="flex justify-between">
-        <button
-          className="btn"
-          onClick={handleBack}
-          disabled={currentStep === 1}
-        >
-          Back
-        </button>
-        {!complete && (
-          <button className="btn" onClick={handleNext}>
-            {currentStep === steps.length ? "Finish" : "Next"}
-          </button>
-        )}
-      </div> */}
     </>
   );
 };
