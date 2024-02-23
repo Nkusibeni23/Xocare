@@ -13,7 +13,7 @@ export default function AdditionalDetails() {
           cols="80"
         />
         <div className="relative">
-          <span className="absolute bottom-28 right-8 text-gray-500">
+          <span className="absolute bottom-[120px] right-8 text-gray-500">
             Optional
           </span>
         </div>
